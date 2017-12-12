@@ -13,8 +13,6 @@ COPY ./files/sources.list.jessie /etc/apt/sources.list
 RUN apt-get update
 
 ## mcrypt
-RUN apt-get install -y libmcrypt-dev
-RUN docker-php-ext-install mcrypt
 
 ## GD
 RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng12-dev
@@ -136,8 +134,8 @@ RUN docker-php-ext-install bz2
 ## or
 ##    `Package "xxx" does not have REST xml available`
 ## Please turn on proxy (the proxy IP may be docker host IP or others).
-#RUN export http_proxy=10.0.75.1:1080
-#RUN export https_proxy=10.0.75.1:1080
+#RUN export http_proxy=127.0.0.1:1080
+#RUN export https_proxy=127.0.0.1:1080
 #RUN pecl install redis-3.1.4 && docker-php-ext-enable redis
 #RUN pecl install xdebug && docker-php-ext-enable xdebug
 #RUN pecl install igbinary && docker-php-ext-enable igbinary
