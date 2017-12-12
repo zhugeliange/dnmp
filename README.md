@@ -67,5 +67,3 @@ sudo systemctl restart docker
 - 另外其他的类似于 **HTTPS**， 还是配置域名站点等官网都有说明我就不啰嗦了。
 
 ## 好了废话说完了，完结撒花。再次膜拜 [yeszao](https://github.com/yeszao) 大神。
-
-> ***猪哥亮*** *出品，转载还烦请注明出处，不然报警啦~*
